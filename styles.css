@@ -1,0 +1,77 @@
+body{
+  background-image: url(images/bg-table.jpg);
+  background-size: cover;
+}
+.papercontainer{
+  display:flex;
+}
+.character-sheet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #f5e9d8;
+    color: #4a4a4a;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-image: url(images/seamless_paper_texture.png);
+    background-size: auto;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.50);
+    box-sizing: border-box;
+    height: 29.7cm; /* A4 page height */
+    width: 21cm; /* A4 page width */
+    margin: 0 auto;
+  }
+
+  .sheetbox{
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .character-details {
+    grid-column: 1 / span 2;
+  }
+  
+  .abilities {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+  }
+  
+  .inventory {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+  }
+  
+  th, td {
+    border: 1px solid #4a4a4a;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f5d0;
+    color: #4a4a4a;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  ul {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
